@@ -1,10 +1,10 @@
 //crud
 import * as DB from '../../db'
 
-export const findAll = (req,res) => {
+export const findAllProducts = (req,res) => {
     return res.json({
         ok: true,
-        data: DB.findAll(),
+        data: DB.findAllProducts(),
     })
 }
 

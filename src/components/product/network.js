@@ -5,7 +5,7 @@ import * as Controller from "./controller"
 
 const productRouter = Router()
 
-productRouter.route("/").get(Controller.findAll)
+productRouter.route("/").get(Controller.findAllProducts)
 productRouter.route("/:id").get(Controller.findOne)
 productRouter.route("/").post(Controller.create)
 productRouter.route("/:id").put(Controller.update)

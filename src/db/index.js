@@ -1,10 +1,56 @@
 import { defaultConfiguration } from "express/lib/application"
 
-const data = []
+const dataProduct = [{
+        id: "1",
+        name: "Tv Samsung",
+        description: "The Tv Samsung of 22' is a wonderful artifact also have new functions",
+        price: 2400.99
+    },
+    {
+        id: "2",
+        name: "iPhone 14",
+        description: "The last celphone from Apple, with a better camera and more capacity",
+        price: 3200.99
+    },
+    {
+        id: "3",
+        name: "CPU i7 9no Generetion",
+        description: "The new and fast pc for anyone, also if you lkike to play some videogames or office",
+        price: 3200.99
+    }]
+
+const data = [{
+        id: "1",
+        name: "Miguel Angel",
+        lastname: "Medina Ventura",
+        age: 22
+    },
+    {
+        id: "2",
+        name: "Carlos",
+        lastname: "Alcazar",
+        age: 20
+    },
+    {
+        id: "3",
+        name: "Ana",
+        lastname: "Lopez",
+        age: 21
+    }]
 let identificador = 0
 
 export const findAll = () => {
     return data
+}
+
+export const findAllProducts = () => {
+    return dataProduct
+}
+
+export const index = () => {
+    return test = [{
+        message: "Hola Mundo"
+    }]
 }
 
 //buscar por id
